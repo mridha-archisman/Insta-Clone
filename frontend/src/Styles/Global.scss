@@ -1,0 +1,40 @@
+* {
+
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+html {
+
+    font-size: 16px;
+
+    ::-webkit-scrollbar {
+
+        width: 0px;
+    }
+
+    .Layout {
+
+        width: 100vw;
+        overflow-x: hidden;
+
+        section {
+
+            width: 100vw;
+            min-height: 100vh;
+
+            input {
+
+                &::placeholder {
+
+                    color: inherit;
+                }
+            }
+        }
+    }
+}

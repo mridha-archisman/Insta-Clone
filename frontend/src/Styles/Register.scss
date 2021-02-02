@@ -1,0 +1,84 @@
+@import './Variables.scss';
+
+.Register {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+
+        width: 50vw;
+    }
+
+    form {
+
+        input {
+
+            height: 3rem;
+            width: 90%;
+            border: none;
+            margin-bottom: 1rem;
+            padding: 0 1rem;
+        }
+
+        button {
+  
+            height: 3rem;
+            width: 10rem;
+            margin-top: 1rem;
+            border-radius: 50px;
+            background-color: transparent;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+    }
+
+    .card {
+
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        background: $card-background;
+        align-items: center;
+        border-radius: 5px;
+
+        h1 {
+
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            letter-spacing: 1px;
+        }
+
+        &:not( :last-child ) {
+
+            margin-bottom: 1rem;
+            flex-direction: column;
+            padding: 2rem 1rem;
+        }
+
+        &:first-child {
+
+            span {
+
+                color: $card-link;
+                width: 100%;
+                text-align: end;
+                margin-top: 5px;
+                cursor: pointer;
+            }
+        }
+
+        &:last-child {
+
+            padding: 1rem;
+
+            span:last-child {
+
+                color: $card-link;
+                margin-left: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+}
